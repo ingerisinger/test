@@ -1,8 +1,172 @@
-  <html>
-  <head>
-  <title>hello github page</title>
-  </head>
-  <body>
-    hello
-  </body>
-  </html>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500;700&display=swap" rel="stylesheet">
+    <style type="text/css">
+        *{
+            padding:0px;
+            margin:0px;
+            list-style: none;
+            box-sizing: border-box;
+            font-family: 'Noto Sans TC', sans-serif;
+           
+        }
+        html,body{
+            width:100%;
+           
+        }
+        header{
+            margin:auto;
+            padding:10px;
+            display:flex;
+            justify-content: center;
+            background-image: linear-gradient(45deg,LightPink,MediumPurple);
+        }
+        .content{
+            width:800px;
+            line-height:3em;
+            margin:20px;
+            font-size: 20px;
+            padding:10px;
+            border-radius: 20px;
+            color:DarkOrchid;
+            font-weight: 800;
+            background-color:white;
+            box-shadow: 3px 5px 5px 10px Cornsilk;
+            backdrop-filter:blur(5px);
+            text-indent:4em;
+        }
+        .container{
+            width:100%;
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .box{
+            width:45%;
+            border:2px solid black;
+            color:black;
+            margin:20px 15px;
+            padding:10px;
+            border-radius: 10px;
+        }
+        .box:hover{
+            transform: translateY(-20px);
+            background-color:rgba(200,200,200,0.6) ;
+            border-style: none;
+          
+        }
+        .box h2{
+            margin-bottom: 10px; 
+            font-weight: 900;
+        }
+        .box:hover h2{
+            color:Peru;
+        }
+        .box p{
+            line-height: 40px;
+        }
+       
+        .me{
+            display: flex;
+            flex-direction: column;
+            width:100px;
+            font-size: 60px;
+            justify-content: center;
+            margin:60px;
+        }
+        .me:after{
+            content: '';
+            display:block;
+            height:5px;
+            background-color: black;
+            width:1em;
+            transform: rotateY(20px);
+        }
+        span{
+            color:Fuchsia;
+        }
+        footer{
+            background-color:rgba(200,200,200) ;
+            height:250px;
+            padding:15px;
+        }
+        footer ul{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        footer li{
+            margin:10px 10px;
+        }
+        footer a{
+           color:black;
+           text-decoration: none;
+           font-size: 22px;
+        }
+        footer h2{
+            text-align: center;
+            font-size: 36px;
+            margin-bottom:20px;
+        }
+        footer a:hover{
+            color:Peru;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="me">
+            個人簡介
+        </div>
+        <div class="content">
+            我是陳奕璋，今年26歲，畢業於台灣師範大學人類發展與家庭學系。 我畢業後在淡水的精英教育機構做夏令營的招生與網站的經營，工作近三年，覺得自己需要改變現在的生活狀態，所以辭職了，並且參加郵局的考試，結果是備取第一名，在等候的同時，覺得需要學習一技之長，剛好弟弟的工作有接觸後端的資料庫處理，在他的邀請之下，接觸了html跟css等，學習的同時在youtube上看到彭彭大大的教學影片，覺得受益良多。自己本身的興趣是看電影、打籃球、戶外踏青，希望可以多跟其他人交流，以精進自己網頁前端的能力，並順利找到相關類型的工作，給自己新的挑戰。
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="box">
+                <h2>1.為什麼想成為前端、後端、或全端工程師？</h2>
+                <p>之前有在網站後台編輯的經驗，想學習更多網站的架構，喜歡看到自己做出來的成品(視覺效果或動畫)，所以想成為前端的工程師，但同時也要了解後端的邏輯，在工作上才能更得心應手</p>
+            </div>
+            <div class="box">
+                <h2>2.為了成為軟體工程師，曾經做過什麼努力？</h2>
+                <p>1.為了考取相關證照，買書來研究<br/>
+                    2.上網找尋程式相關資源做學習<br/>
+                    3. 準備<span>MTA</span>的html5的考試中</p>
+            </div>
+            <div class="box">
+                <h2>3.如果參與這個計畫，會怎麼安排學習時間？</h2>
+                <p>跟隨貴單位的線上教學影片進行學習，希望可以每週跟著進度做學習，因為本身基礎跟觀念不扎實，假日會額外花更多的時間實作或看技術文章做學習</p>
+            </div>
+            <div class="box">
+                <h2>4.如果參與這個計畫，預期會碰到什麼困難？你打算怎麼解決它？</h2>
+                <p>1. 因為非相關科系，對於資訊較底層的知識不甚熟悉，勢必會遇到一些沒聽過的專有名詞，遇到問題的時候，會先以<span>google找答案</span>為主，訓練解決問題的能力，如果真的不會，會主動請教助教或老師 </p>
+            </div>
+            <div class="box">
+                <h2>5.是否有想要加入的軟體公司？為什麼想加入該公司？</h2>
+                <p>對於台大的新創公司<span>hahow</span>很有興趣，希望之後自己可以到那邊做前端工程師</p>
+            </div>
+            <div class="box">
+                <h2>6.想要對我們說的事情？</h2>
+                <p>覺得你們做的事情很酷，期待跟你們一起學習、成長</p>
+            </div>
+        </div>
+       
+    </main>
+    <footer>
+        <h2>個人資料</h2>
+        <ul>
+            <li><a href="#">姓名:陳奕璋</a></li>
+            <li><a href="#">個人信箱:nba.com30@gmail.com</a></li>
+            <li><a href="https://www.facebook.com/" target="_blabk">臉書連結</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
