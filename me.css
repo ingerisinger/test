@@ -1,0 +1,141 @@
+*{
+    padding:0px;
+    margin:0px;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+header{
+    width:300px;
+    text-align: center;
+    margin:auto;
+    margin-bottom:20px;
+    padding:10px;
+    padding-bottom:0px;
+    font-size: 40px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+   border-bottom:20px solid Moccasin;
+   position:re
+}
+select{
+    text-align: center;
+    line-height:20px;
+}
+.star{
+    display:flex;
+    justify-content: center;
+    margin:10px 0px;
+    font-size: 30px;
+}
+.star button{
+    border-radius:15px;
+    padding:5px 10px;
+    margin:0px 5px;
+}
+.star button:focus{
+    background-color:LemonChiffon ;
+}
+.content{
+    display:flex;
+    align-items: center;
+    margin:auto;
+    width:1400px;
+}
+nav{
+    display:flex;
+    justify-content: flex-start;
+    border:2px solid black;
+    width:100px;
+    margin-left:20px;
+    height:500px;
+}
+nav ul{
+   display:block;
+}
+nav a{
+    text-decoration: none;
+}
+nav li{
+    margin:5px 0px;
+    display:block;
+    padding:5px;
+}
+nav li:hover{
+    padding:5px;
+    background-color: LemonChiffon;
+}
+.container{
+    width:1200px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color:NavajoWhite;
+    margin:auto;
+    margin:10px 10px;
+}
+.item{
+    width:45%;
+    border:2px solid black;
+    background-color: antiquewhite;
+    display:none;
+    padding:20px;
+    margin: 10px;
+
+}
+.container .text{
+    padding:5px 10px;
+    line-height: 40px;
+    font-size: 28px;
+}
+.container .text h2{
+    color:MediumBlue;
+}
+.toggle{
+    display:block;
+}
+@media (max-width:500px){
+    
+    .item{
+        width:80%;
+    }
+    nav{
+        display:flex;
+        align-items: center;
+        height:100px;
+        width:90%;
+    }
+    nav ul{
+        display:flex;
+        flex-wrap: wrap;
+    }
+    nav li{
+        width:60px;
+        height:20px;
+        margin:10px 0px;
+        padding:5px;
+    }
+    nav li:hover{
+        padding:5px;
+    background-color: LemonChiffon;
+    }
+    .content{
+        display:flex;
+      flex-direction: column;
+      justify-content: center;
+        margin:auto;
+        width:95%;
+    }
+    .container{
+        width:90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color:NavajoWhite;
+        margin:auto;
+        margin:10px 10px;
+    }
+    .item{
+        width:100%;
+    }
+}
