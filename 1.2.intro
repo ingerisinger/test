@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500&display=swap" rel="stylesheet">
+    <title>陳奕璋個人申請網頁</title>
+    <style>
+        *{
+            padding:0px;
+            margin:0px;
+            list-of-style:none;
+            box-sizing:border-box;
+            color:black;
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+        header{
+            height:15vh;
+            background-color:CornflowerBlue;
+            text-align:center;
+            font-size:35px;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+        }
+        .content{
+            display:flex;
+        }
+        nav{
+            width:200px;
+            height:350px;
+            background-color:transparent;
+            margin:40px;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            border:2px solid SteelBlue;
+            position:relative;
+            top:150px;
+        }
+        .title{
+            text-align:center;
+            line-height:45px;
+            font-size:25px;
+            
+        }
+         img{
+            width:150px;
+            height:150px;
+            border-radius:20px;
+            width:100%;
+            z-index:-2;
+            position:absolute;
+            top:-170px;
+            backdrop-filter:flur(30px);
+        }
+        .title li{
+            display:block;
+            color:black;
+            padding:5px 10px;
+            transition:0.5s;
+        }
+        .title li:hover{
+            background-color:SteelBlue;
+            color:Snow;
+            opacity:0.7;
+        }
+      
+        .title a{
+            text-decoration:none;
+        }
+        .container{
+            width:900px;
+            margin:20px;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+        }
+        .center{
+            height:50px;
+            width:100%;
+            font-size:24px;
+            display:flex;
+            align-items:center;
+            justify-content:flex-start;
+            border-bottom:2px solid black;
+        }
+        .center:hover{
+            color:CornflowerBlue;
+        }
+        .person{
+            margin:40px 20px;
+            height:100px;
+            width:90%;
+            font-size:30px;
+            background-color:Gainsboro;
+            padding:30px;
+            text-align:center;
+        }
+        .school{
+            margin:20px;
+            height:100px;
+            width:90%;
+            font-size:26px;
+            background-color:Gainsboro;
+            padding:30px;
+            text-align:center;
+        }
+        .job{
+            margin:20px;
+            height:100px;
+            width:90%;
+            font-size:26px;
+            background-color:Gainsboro;
+            padding:30px;
+            text-align:center;
+        }
+        .certi{
+            margin:40px 20px;
+            height:200px;
+            width:90%;
+            font-size:30px;
+            background-color:Gainsboro;
+            padding:30px;
+            line-height:50px;
+            text-align:left;
+        }
+        .skill{
+            margin:20px;
+            height:100px;
+            width:90%;
+            font-size:26px;
+            background-color:Gainsboro;
+            padding:30px;
+            text-align:center;
+        }
+        .self-introduce{
+            margin:40px 10px;
+            height:600px;
+            width:90%;
+            font-size:24px;
+            background-color:Gainsboro;
+            padding:20px ;
+            line-height:60px;
+            text-indent:50px;
+        }
+        footer{
+            background-color:CornflowerBlue;
+            width:100%;
+            height:150px;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+        .bottom{
+            text-align:center;
+            font-size:28px;
+        }
+        .bottom:hover{
+            color:Silver;
+        }
+        @media(max-width:900px){
+            header{
+                font-size:35px; 
+            }
+            .content{
+                display:flex;
+                flex-direction:column;
+                align-items:center; 
+            }
+            nav{
+               width:85%; 
+               height:70px;
+               position:relative;
+               top:180px;
+               margin-bottom:180px;
+            }
+          
+            nav .title ul{
+                display:flex;
+               
+            }
+            .title ul li{
+                font-size:20px;
+            }
+            img{
+                width:200px;
+                height:200px;
+                position:absolute;
+                top:-210px;
+            }
+            .container {
+                width:85%; 
+            }
+            .container .center{ 
+                font-size:22px;
+            }
+            .self-introduce{
+                font-size:18px; 
+            }
+        }
+        @media(max-width:500px){
+            nav{
+                width:45%; 
+                height:70px;
+                position:relative;
+                top:180px;
+                margin-bottom:180px;
+             }
+             .container {
+                width:45%; 
+            }
+        }
+
+    </style>
+    
+</head>
+<body>
+    <header>
+    <h1>個人簡歷</h1>
+    </header>
+    <div class="content">
+    <nav>
+        <img src="個人帥照.jpg" alt="個人照">
+        <div class="title">
+            <ul>
+                <li><a href="#person">個人資料</a></li>
+                <li><a href="#school">學歷</a></li>
+                <li><a href="#job">工作經歷</a></li>
+                <li><a href="#certi">證照</a></li>
+                <li><a href="#skill">技術</a></li>
+                <li><a href="#self-introduce">自傳</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="center"id="person">
+            個人資料
+        </div>
+        <div class="person">
+          1994年出生,有汽車駕照,現居基隆
+        </div>
+        <div class="center"id="school">
+            學歷
+        </div>
+        <div class="school">
+            臺灣師範大學人類發展與家庭學系(幼教組)
+        </div>
+        <div class="center"id="job">
+            工作經歷
+        </div>
+        <div class="job">
+            精英國際教育集團-多元智能夏令營專員(2018.11-2021.8)
+        </div>
+        <div class="center"id="certi">
+            證照
+        </div>
+        <div class="certi">
+            1.MTA EXAM 98-383(html.css)<br/>
+            2.金融常識與職業道德<br/>
+            3.中華民國c級健身指導員
+        </div>
+        <div class="center"id="skill">
+            技術
+        </div>
+        <div class="skill">
+            html,css,javascript,jquery
+        </div>
+        <div class="center"id="self-introduce">
+            自傳
+        </div>
+        <div class="self-introduce">
+            我是陳奕璋，畢業於台灣師範大學人類發展與家庭學系。 我畢業後在淡水的精英教育機構做夏令營的招生與網站的經營，在那裡工作將近三年，學習到基本的工作態度，以及累積超過一千名夏令營客戶互動的經驗。自己本身的興趣是看電影、打籃球、戶外踏青，現在則是花大量時間自學前端(html,css,javascript,jquery,rwd)，以精進自己網頁前端的能力，並期許自己能找到最適合自己的工作，樂於接受新的挑戰。
+        </div>
+    </div>
+</div>
+    <footer>
+        <div class="bottom">
+            個人信箱<br/>
+            nba.com30@gmail.com
+        </div>
+    </footer>
+</body>
+</html>
